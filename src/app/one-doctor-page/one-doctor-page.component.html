@@ -1,0 +1,27 @@
+<div class="onedoctorPage">
+  <div class="row text-center bg-primary text-white">
+    <div class="circle mx-auto d-flex justify-content-center align-items-center mt-3">
+      <img [src]="doctor.imageUrl" class="mx-auto d-block">
+    </div>
+    <h1>Dr {{ doctor.first_name }}  {{ doctor.last_name }}</h1>
+    <h5>{{ doctor.specialty }}</h5>
+  </div>
+
+  <div class="row border shadow rounded colorDeFont mt-3">
+    <h1 class="text-primary">Biographie</h1>
+    <hr class="text-primary">
+    <p>
+      {{ doctor.biography }}
+    </p>
+    <h1 class="text-primary">Coordonnées</h1>
+    <hr class="text-primary">
+    <ul class="list-unstyled">
+      <li><b>Adresse :</b> {{ doctor.address }}</li>
+      <li><b>Téléphone :</b> {{ doctor.phone }}</li>
+      <li><b>Email :</b> {{ doctor.email }}</li>
+    </ul>
+    <div class="text-end mt-3">
+      <button type="button" class="btn btn-primary buttonAppointment m-4" routerLink="/doctor">PRENDRE UN RENDEZ-VOUS</button>
+    </div>
+  </div>
+</div>

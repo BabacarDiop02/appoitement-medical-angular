@@ -1,0 +1,27 @@
+img {
+  height: 35vh;
+  width: 35vh;
+  color: white;
+}
+
+.circle {
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.colorDeFont {
+  background-color: #e8e6e6;
+}
+
+
+.buttonAppointment {
+  font-size: 40px;
+  font-weight: bold;
+}
+.buttonAppointment:hover {
+  background-color: white;
+  color: blue;
+  font-weight: bolder;
+}
