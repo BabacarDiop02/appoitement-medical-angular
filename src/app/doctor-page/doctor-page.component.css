@@ -1,0 +1,13 @@
+img {
+  height: 35vh;
+  width: 35vh;
+}
+
+.onedoctorPage {
+  display: inline-block;
+  justify-content: center;
+}
+
+.borderBlack {
+  border: solid 1px black;
+}

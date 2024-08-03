@@ -1,0 +1,16 @@
+.prendreRV {
+  background-color: #e8e6e6;
+}
+
+img {
+  height: 300px;
+  width: 500px;
+}
+
+.buttonAppointment {
+  background: linear-gradient(to right, #89c5f6 0%, #dfeffb 50%, #89c5f6 110%);
+}
+.buttonAppointment:hover {
+  background: linear-gradient(to right, #0029ff 0%, #dfeffb 50%, #0029ff 110%);
+  font-weight: bolder;
+}

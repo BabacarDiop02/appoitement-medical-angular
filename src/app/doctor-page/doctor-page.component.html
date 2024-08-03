@@ -1,0 +1,8 @@
+<div class="onedoctorPage m-4">
+  <div class="borderBlack mt-3 p-3 text-center inline-block-div">
+    <img src="assets/images/imageNoDoctor.png" class="borderBlack bg-primary">
+    <h2>Dr. {{ doctor.firstName }} {{ doctor.lastName }}</h2>
+    <h4 class="text-primary">{{ doctor.specialty }}</h4>
+    <button class="btn btn-outline-primary" (click)="onViewDoctor()">Prendre RV</button>
+  </div>
+</div>

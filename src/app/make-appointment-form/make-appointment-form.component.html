@@ -1,0 +1,22 @@
+<div class="form-card">
+  <h2 class="text-primary">PRENDRE UNE RENDEZ-VOUS</h2>
+  <form [formGroup]="appointmentForm">
+    <div class="mb-3">
+      <label for="objective" class="form-label text-primary">Objectif</label>
+      <input type="text" class="form-control" id="objective" formControlName="objective" placeholder="Objectif">
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label text-primary">Description</label>
+      <textarea type="text" class="form-control" id="description" formControlName="description" placeholder="Description"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label text-primary">Jour</label>
+      <input type="date" class="form-control" id="date" formControlName="date">
+    </div>
+    <div class="mb-3">
+      <label for="hour" class="form-label text-primary">Heure</label>
+      <input type="time" class="form-control" id="hour" formControlName="hour">
+    </div>
+    <button type="submit" (click)="onSubmitForm()" [disabled]="appointmentForm.invalid" class="btn btn-outline-primary btn-lg">Envoyer</button>
+  </form>
+</div>

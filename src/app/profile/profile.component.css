@@ -1,0 +1,23 @@
+.form-card {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+img {
+  padding: 7px;
+  border: solid 3px;
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+}
+
+button {
+  border-radius: 30px;
+}
+
+h3 {
+  border: solid 1px black;
+}

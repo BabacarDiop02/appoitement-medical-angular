@@ -1,0 +1,10 @@
+.blockquote-footer {
+  height: 40vh;
+  margin-top: 4vh;
+  padding: 3vh;
+  background: linear-gradient(to right, #89c5f6 0%, #dfeffb 50%, #89c5f6 110%);
+}
+
+hr {
+  border: solid 1px black;
+}

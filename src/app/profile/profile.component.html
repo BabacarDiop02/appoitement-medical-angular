@@ -1,0 +1,43 @@
+<div class="form-card">
+  <div class="row p-3">
+    <div class="col-4 text-center">
+      <img src="assets/images/imageNoMan.png" class="border-primary" alt="your profile">
+      <button class="btn btn-outline-primary mt-3 w-100"><i class="fa-solid fa-user-pen"></i> Modifier</button>
+    </div>
+    <div class="offset-1 col-7">
+      <h1 class="text-primary fw-bold">{{ "Patient" | uppercase }}</h1>
+      <div class="row pt-3">
+        <div class="col-6">
+          <legend>Prénom</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ patient.firstName }}</h3>
+        </div>
+        <div class="col-6">
+          <legend>Nom</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ patient.lastName }}</h3>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-6">
+          <legend>Age</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ age }} ans</h3>
+        </div>
+        <div class="col-6">
+          <legend>Nom</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ patient.gender }}</h3>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-12">
+          <legend>Email</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ patient.mail }}</h3>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-12">
+          <legend>Numéro Téléphone</legend>
+          <h3 class="bg-primary fw-bold fs-3 w-100 p-2 text-white">{{ patient.phone }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

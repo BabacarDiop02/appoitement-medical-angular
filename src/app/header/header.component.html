@@ -1,0 +1,86 @@
+<header>
+  <div class="menu">
+    <div class="row">
+      <div class="col">
+        <div class="marquee text-primary p-2">
+          <h2><span class="margeRight">{{ "Sen Rendez-vous Médical" | uppercase }}</span> {{ "Votre bien-être, notre priorité" | uppercase }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/assets/images/logoSRM2.png" alt="logo Sen Rendez-vous Médical"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/doctors" routerLinkActive="active">Médecin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/services" routerLinkActive="active">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+              </li>
+              <li class="nav-item">
+                <!-- button trigger modal -->
+                <a type="button" class="nav-link" id="toggleModaleButton" data-bs-toggle="modal" data-bs-target="#setting"><i class="fa-solid fa-user-gear bg-primary"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="setting" tabindex="-1" aria-labelledby="settingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="settingLabel">Paramétre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="assets/images/imageNoMan.png">
+              <h3>{{ patient.firstName + " " + patient.lastName | uppercase }}</h3>
+              <h6>{{ "Patient" | uppercase }}</h6>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-secondary fw-bold fs-4 text-start" routerLink="/profile" data-bs-dismiss="modal">Profile</button>
+                <button type="button" class="btn btn-outline-secondary fw-bold fs-4 text-start" routerLink="/myAppointment" data-bs-dismiss="modal">Mes Rendez-vous</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-outline-danger">Déconnexion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggleModaleButton');
+    const modal = new bootstrap.Modal(document.getElementById('setting'));
+
+    toggleButton.addEventListener('click', function () {
+      if (modal._element.classList.contains('show')) {
+        modal.hide();
+      } else {
+        modal.show();
+      }
+    });
+  });
+</script>

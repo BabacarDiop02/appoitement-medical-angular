@@ -1,0 +1,8 @@
+<div class="oneDoctor d-flex justify-content-center flex-wrap">
+  @for (doctor of doctors$; track doctor.id) {
+    <app-doctor-page [doctor]="doctor"/>
+    @if (doctor.id > 0 && doctor.id % 3 == 0 ) {
+     <br>
+    }
+  }
+</div>

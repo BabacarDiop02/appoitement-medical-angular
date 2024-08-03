@@ -1,0 +1,22 @@
+.card {
+  border-color: #0029ff;
+}
+
+.validated {
+  background-color: green;
+}
+
+.pending {
+  background-color: #c6c4c4;
+}
+
+.cancelled {
+  background-color: red;
+}
+
+.validated, .pending, .cancelled {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  color: black;
+}
